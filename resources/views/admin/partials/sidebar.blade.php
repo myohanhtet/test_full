@@ -19,7 +19,10 @@
             </a>
             <ul class="treeview-menu">
                 <li>
-                    <a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Admin Users</a>
+                    <a class="app-menu__item {{ Route::currentRouteName() == 'admin.brands.index' ? 'active' : '' }}" href="{{ route('admin.brands.index') }}">
+                        <i class="app-menu__icon fa fa-briefcase"></i>
+                        <span class="app-menu__label">Brands</span>
+                    </a>
                 </li>
                 <li>
                     <a class="treeview-item" href="#" target="_blank" rel="noopener noreferrer"><i class="icon fa fa-circle-o"></i> Roles</a>
